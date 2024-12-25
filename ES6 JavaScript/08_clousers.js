@@ -8,32 +8,30 @@
 
 */
 
-
 function one() {
-    const str = "shubham sharma"
-    function two() {
-        // console.log(str)
-        function three() {
-            console.log(str)
-        }
-        three()
+  const str = "shubham sharma";
+  function two() {
+    // console.log(str)
+    function three() {
+      console.log(str);
     }
+    three();
+  }
 
-    two()
+  two();
 }
-one()
-
+one();
 
 // counter
 
-function creatCounter(){
-    let count = 0;
-   return function(){
-        count++;
-        return count;
-    }
+function creatCounter() {
+  let count = 0;
+  return function () {
+    count++;
+    return count;
+  };
 }
-const counter = creatCounter()
-console.log(counter())
-console.log(counter())
-console.log(counter())
+const counter = creatCounter();
+console.log(counter());
+console.log(counter());
+console.log(counter());
